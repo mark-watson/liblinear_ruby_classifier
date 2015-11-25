@@ -33,7 +33,7 @@ An intermediate file with the suffix ".svm" is written during processing that co
 
 ## Model accuracy
 
-The file test1.csv is tiny: it just includes 16 examples for 2 classifications (or categries). For practical applications the more training data the better.
+The file test1.csv is tiny: it just includes 16 examples for 2 classifications (or categries). For practical applications the more training data the better. The results with the small test1.csv file will not be good, but when I use this model with many training examples the accuracy is usually > 90%, depending on your data and how many classes you are training.
 
 About 30% of the input data is set aside for testing the trained model.
 
@@ -46,13 +46,10 @@ The following **irb** session shows how to cll the trained model:
 2.2.1 :001 > load './liblinear_ruby_classifier.rb'
 
 gold: 0	prediction: 0	original data: EDUCATION	The students turned in their homework at school before summer break.
-gold: 1	prediction: 1	original data: HEALTH	The doctor and the nurse advised be to get rest because of my cold.
-gold: 1	prediction: 1	original data: HEALTH	The doctor had to go to the hospital.
-gold: 0	prediction: 0	original data: EDUCATION	The student lost her homework.
-gold: 1	prediction: 1	original data: HEALTH	The cold and flu season started this month.
-gold: 0	prediction: 1	original data: EDUCATION	The teacher yelled at the student who was late to class but later apologized.
+gold: 0	prediction: 0	original data: EDUCATION	The students and teachers agreed on a plan for study.
+gold: 1	prediction: 1	original data: HEALTH	The hospital has 215 patients, 10 doctors, and 22 nurses.
 
-Percent correctly classified: 83
+Percent correctly classified: 100
  => true 
 2.2.1 :002 > SVMclassifier "the teacher said no homework for the student"
  => "EDUCATION" 
