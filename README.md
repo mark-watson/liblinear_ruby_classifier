@@ -33,7 +33,7 @@ An intermediate file with the suffix ".svm" is written during processing that co
 
 ## Model accuracy
 
-The file test1.csv is tiny: it just includes 16 examples for 2 classifications (or categries). For practical applications the more training data the better. The results with the small test1.csv file will not be good, but when I use this model with many training examples the accuracy is usually > 90%, depending on your data and how many classes you are training.
+The file test1.csv is tiny: it just includes 16 examples for 2 classifications (or categories). For practical applications the more training data the better. The results with the small test1.csv file will not be excellent, but when I use this model with many training examples the accuracy is usually > 90%, depending on your data and how many classes you are training.
 
 About 30% of the input data is set aside for testing the trained model.
 
@@ -53,6 +53,9 @@ Percent correctly classified: 100
  => true 
 2.2.1 :002 > SVMclassifier "the teacher said no homework for the student"
  => "EDUCATION" 
-2.2.1 :004 > 
+2.2.1 :003 > 
 ````````
 
+When the file liblinear_ruby_classifier.rb is loaded it trins a model on about 70% of the data and then tests the model using the other 30% of the original data. The output after loading this file shows the results of predicting the classification (category) of the test data.
+
+After a model is trained then use the method **SVMclassifier** to classify new text.
