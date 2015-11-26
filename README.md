@@ -56,6 +56,6 @@ Percent correctly classified: 100
 2.2.1 :003 > 
 ````````
 
-When the file liblinear_ruby_classifier.rb is loaded it trins a model on about 70% of the data and then tests the model using the other 30% of the original data. The output after loading this file shows the results of predicting the classification (category) of the test data.
+When the file liblinear_ruby_classifier.rb is loaded it trains a model on about 70% of the data and then tests the model using the other 30% of the original data. The output after loading this file shows the results of predicting the classification (category) of the test data.
 
 After a model is trained then use the method **SVMclassifier** to classify new text.
